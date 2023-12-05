@@ -1,0 +1,8 @@
+shared:
+    image: node:18
+
+jobs:
+    sub:
+        requires: [~sd@12753:main]
+        steps:
+            - start: echo ok
