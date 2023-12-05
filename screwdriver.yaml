@@ -2,11 +2,11 @@ shared:
     image: node:18
 
 jobs:
-    sub:
-        requires: [~sd@12753:main]
+    X:
+        requires: [~sd@12753:A]
         steps:
             - start: echo ok
-    sub2:
-        requires: [~sd@12753:join]
+    Y:
+        requires: [~sd@12753:B]
         steps:
             - start: echo ok
