@@ -6,3 +6,7 @@ jobs:
         requires: [~sd@12753:main]
         steps:
             - start: echo ok
+    sub2:
+        requires: [~sd@12753:join]
+        steps:
+            - start: echo ok
