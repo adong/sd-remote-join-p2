@@ -7,6 +7,14 @@ jobs:
         steps:
             - start: echo ok
     Y:
+        requires: [~sd@12753:D]
+        steps:
+            - start: echo ok
+    X2:
+        requires: [~sd@12753:C]
+        steps:
+            - start: echo ok
+    Y2:
         requires: [~sd@12753:B]
         steps:
             - start: echo ok
