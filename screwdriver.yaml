@@ -2,6 +2,9 @@ shared:
     image: node:18
 
 jobs:
+    trigger:
+        steps:
+            - start: echo ok
     X:
         requires: [~sd@12753:A]
         steps:
@@ -15,6 +18,6 @@ jobs:
         steps:
             - start: echo ok
     Y2:
-        requires: [~sd@12753:B]
+        requires: [~sd@12753:B, trigger]
         steps:
             - start: echo ok
